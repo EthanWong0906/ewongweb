@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel = "stylesheet" type = "text/css" href = "csty.css">
+    </head>
+    <body>
+        <section class = "socialMedia">
+            <ul class = "sci">
+                <li data-text = "Instagram" data-color = "#e4405f">
+                    <a href = "https://www.instagram.com/ethan._.w.o.n.g/" class = "instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </section>
+        <script src = "vanilla-tilt.min.js">
+
+        </script>
+        <script>
+            VanillaTilt.init(document.querySelector(".sci li a"), {
+                max: 30,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+
+            });
+    
+            let list = document.querySelectorAll(".sci li");
+            let bg = document.querySelectorAll(".socialMedia");
+            list.forEach(elelments => {
+                elements.addEventListener('mouseenter', function
+                (event){
+                    let color = event.target.getAttribute
+                    ('data-color');
+                    bg.style.backgroundColor = color;
+                })
+            })
+        </script>
+    </body>
+</html>

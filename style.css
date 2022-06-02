@@ -338,3 +338,19 @@ button:hover{
     font-size: 5mm;
     vertical-align: middle;
 }
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.sci{
+    position: relative;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+}
