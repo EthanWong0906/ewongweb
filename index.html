@@ -1,12 +1,133 @@
-<head>
-    <title>Ethan Wong's Website</title>
-    <link rel = "stylesheets" type = "text/css" href = "styles.css"> 
-</head>
-<body>
-    <div>
-        <h1>
-            Welcome to My Website!
-        </h1>
-        
-    </div>
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Ethan Wong</title>
+        <link rel = "stylesheet" href = "style.css" />
+    </head>
+    <body>
+       <header>
+           <text class = "logo">EthanWong</text>
+           <nav>
+               <ul class = "topNav">
+                   <li><a href = "#about">Background</a></li>
+                   <li><a href = "#projects">Projects</a></li>
+                   <li><a href = "#orgs">Organiztions</a></li>
+               </ul>
+           </nav>
+           <a class = "cta" href = "#"><button>Contact</button></a>
+       </header>
+
+       <section class = "banner">
+           <div class = "header1">
+            <h1>
+                Welcome!
+            </h1>
+           </div>
+           <div class = "space">
+               <text></text>
+           </div>
+           <div>
+               <img src = "Pictures/Portrait.jpeg" class = "portrait" alt = "Portrait">
+           </div>
+       </section>
+       <script type = "text/javascript">
+           window.addEventListener("scroll", function(){
+               var header = document.querySelector("header");
+               header.classList.toggle("sticky", window.scrollY > 0);
+           })
+       </script>
+       <div class = "aboutMe">
+            <a name = "about"></a>
+            <h1>
+                About Me
+            </h1>
+       </div>
+       <div class="text">
+        <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas at quam eu condimentum. Cras non fermentum justo. Quisque vel ipsum mattis nulla elementum finibus in sed turpis. Donec facilisis, purus hendrerit facilisis ullamcorper, erat lorem tempus est, commodo vehicula lectus mi sed quam. Vestibulum sagittis ex vitae commodo iaculis. Vivamus in dolor mollis, blandit metus id, bibendum lorem. Fusce rhoncus porttitor molestie. Cras consectetur ex enim, id bibendum arcu maximus eu.</text>
+       </div>
+       <div class = "project">
+        <a name = "projects"></a>
+           <h1 style="color: #24252A">
+               Projects
+           </h1>
+       </div>
+       <div class = bigContainer>
+        <div class = "container">
+            <div class = "card">
+                <div class = "box">
+                    <div class ="content">
+                        <h2>01</h2>
+                    <h3>Stats</h3>
+                    <p>
+                        In my Project-Based Statistics class in the 2021-2022 school year, I conducted many projects in an attempt to help the community around me.
+                    </p>
+                    <a href = "Project_Pages/stats_projects.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div class = "container">
+        <div class = "card">
+            <div class = "box">
+                <div class ="content">
+                    <h2>02</h2>
+                <h3>Research</h3>
+                <p>
+                    Over the summer of 2021, I conducted economics research with a group and published it in a conference journal.
+                </p>
+                <a href = "Project_Pages/research.html">Read More</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class = "container">
+            <div class = "card">
+                <div class = "box">
+                    <div class ="content">
+                        <h2>03</h2>
+                    <h3>WangWang</h3>
+                    <p>
+                        During COVID-19 in Shanghai, I wanted to create a way to connect tennis player. As such, I created WangWang, an app on WeChat meant to help tennis players find hitting partners.
+                    </p>
+                    <a href = "Project_Pages/WangWang.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+       </div>
+       <div class = "organizations">
+           <a name = "orgs"></a>
+           <h1>Organizations</h1>
+       </div>
+       <div class = "orgNames" style="padding-top: 5%">
+           <div class = "org">
+               <img class = "icon" src = "Pictures/AndoverAthletics.png">
+               <div class = "OrgText">
+                <text>I am a co-captain and the number one player of the Phillips Academy Boy's varsity tennis team. I lead a team of eight players for training and competition during the spring season. I try to build a close-knit community within the team by hosting team bonding events.</text>
+            </div>
+           </div>
+           <div class = "org">
+               <img class = "icon" src = "Pictures/TheRevereLogo.jpg">
+               <div class = "OrgText">
+                <text>I am the cheif financial officer of The Revere, Phillips Academy's first and only forign affairs news paper. I led the application for a abbot grant and am planning to establish advertising networks with local businesses.</text>
+            </div>
+           </div>
+       </div>
+       <div class = "orgNames">
+        <div class = "org">
+            <img class = "icon" src = "Pictures/PeerListenerLogo.jpeg">
+            <div class = "OrgText">
+                <text>I am a part of the Phillips Academy Peer Listeners Program. We underwent training to help students destress. We also set up many destressing events.</text>
+            </div>
+        </div>
+        <div class = "org">
+            <img class = "icon" src = "Pictures/HarvestFund.png">
+            <div class = "OrgText">
+                <text>I worked under the channelling department of Harvest Fund Management, where I learned the basics of funding and corporate functions.</text>
+            </div>
+        </div>
+       </div>
+    </body>
+</html>
+

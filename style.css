@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    min-height: 200vh;
+    background-color: #24252A;
+    
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #24252A
+}
+
+li, a, button{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.6s;
+    z-index: 100000;
+}
+
+header .logo{
+    position: relative;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    color: #edf0f1;
+}
+
+.topNav{
+    list-style: none;
+}
+
+.topNav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.topNav li a{
+    transition: all 0.3s ease 0s;
+}
+
+.topNav li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+
+.firstImg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    position: relative;
+    min-height: 2000px;
+    background-size: cover;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(Pictures/background-picture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+
+
+.aboutMe{
+    height: 150px;
+    width: 100%;
+    padding-top: 5%;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header1{
+    padding-top: 11%;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}
+
+
+.portrait{
+    max-width: 15%;
+    clip-path: circle();
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space{
+    width: 100%;
+    height: 4%;
+}
+
+
+.text{
+    color: white;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 120%;
+    padding-bottom: 5%;
+}
+
+.project{
+    background-color: white;
+    color: #24252A;
+    height: 30px;
+    width: 100%;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 50px;
+}
+
+.container{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.container .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, #0088a9,#29b5d7);
+}
+
+.container .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content h2{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0,0,0,0.02);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .card:hover .box .content h2{
+    color: rgba(0,0,0,0.05);
+}
+
+.container .card .box .content h3{
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover .box .content h3,
+.container .card:hover .box .content p{
+    color: #fff;
+}
+
+.container .card .box .content p{
+    font-size: 1em;
+    font-weight: 300;
+    color:#777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #0088a9;
+    margin-top: 15px;
+    border-radius: 20px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.container .card:hover .box .content a{
+    background: #0088a9;
+}
+
+.bigContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.organizations{
+    padding-top:50px;
+    height: 30px;
+    width: 100%;
+}
+
+.orgNames{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow:wrap;
+}
+
+.org{
+    width: 30%;
+    height: 300px;
+    background: white;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 1200px){
+    .box{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .box{
+        width: 90%
+    }
+}
+
+.icon{
+    height: 35%;
+    padding-top:5%;
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
+}
+
+.OrgText{
+    padding: 20px;
+    text-align: center;
+    font-size: 5mm;
+    vertical-align: middle;
+}
